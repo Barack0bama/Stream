@@ -24,23 +24,26 @@ public class findDuplicates {
 		List<String> sorting = colors.stream().distinct().collect(Collectors.toList());
 		System.out.println(sorting);
 
-		// Find Min and Max using stream
+		
 		List<Integer> numbers = new ArrayList<>();
 		numbers.add(56);
 		numbers.add(70);
 		numbers.add(1);
 		numbers.add(100);
 		numbers.add(25);
+		
+		// Find Min and Max using stream
 		System.out.println(numbers);
 		int max = numbers.stream().mapToInt(number -> number).max().getAsInt();
 		int min = numbers.stream().mapToInt(number -> number).min().getAsInt();
+
+		// Find Sum
 		int sum = numbers.stream().mapToInt(number -> number).sum();
 		double avg = numbers.stream().mapToDouble(number -> number).average().getAsDouble();
 
 		System.out.println("The max value is " + max + " And the min value is " + min + " And the total is " + sum + " "
 				+ "and the avg of all the numebrs are " + avg);
 
-		// Find Sum of the number
 
 	}
 
