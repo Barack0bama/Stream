@@ -5,6 +5,7 @@ public class StremPractice {
 		// Split string "Example United state of America" (45)
 		// Using this we can give any condition
 		String bucket1 = "United state of Americae";
+		String bucket11 = "Bangladesh";
 		String[] bucket2 = bucket1.split(" ");
 
 //		for (int i = 0; i < bucket1.length(); i++) {
@@ -25,13 +26,13 @@ public class StremPractice {
 		for(int i = 0; i<bucket1.length();i++)
 		{
 			if (bucket1.charAt(i)=='e') {
-				System.out.println("index of e at "+i++);
+				System.out.println("index of e at indext number "+i++);
 				count++;
 				
 			}
+		
 		}
 		
-
 		// Basic for loop
 
 		// Try catch (138)
